@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-client',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageClientComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router,private activatedRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
+    
+  }
+  nouveauClient():void{
+   this.router.navigate(['nouveauclient']);
   }
 
 }
