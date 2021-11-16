@@ -12,7 +12,7 @@ export class PageCategorieComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  nouvelleCategorie():void{
-   this.router.navigate(['nouvellecategorie'])
+  nouvelleCategorie(): void {
+    this.router.navigate(['nouvellecategorie']);
   }
 }

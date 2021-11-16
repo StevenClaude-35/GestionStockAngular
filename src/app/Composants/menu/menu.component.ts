@@ -122,6 +122,11 @@ export class MenuComponent implements OnInit {
 
   navigate(menu: Menu): void {
    
+    if(this.lastSelectedMenu){
+      this.lastSelectedMenu.active=false;
+    }
+    menu.active=true;
     this.router.navigate([menu.url]);
+    this.lastSelectedMenu=menu;
   }
 }

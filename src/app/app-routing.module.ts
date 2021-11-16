@@ -62,7 +62,11 @@ data:{
   },
   
   {path:'categories',component:PageCategorieComponent},
-  {path:'nouvellecategorie',component:NouvelleCategoryComponent},
+  {
+    path: 'nouvellecategorie',
+    component: NouvelleCategoryComponent
+    
+  },
   {path:'utilisateurs',component:PageUtilisateurComponent},
   {path:'nouvelutilisateur',component:NouvelUtilisateurComponent},
   {path:'profil',component:PageProfilComponent},

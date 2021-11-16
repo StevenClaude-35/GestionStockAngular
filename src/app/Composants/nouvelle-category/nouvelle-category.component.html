@@ -1,29 +1,39 @@
-<div class="col m-3">
-    <hr/>
+<div class="col mb-3">
+    <div class="col-md-12">
+      <div class="col-md-12 mb-3 mt-3">
+        <h2>Nouvelle categorie</h2>
+      </div>
+      <div class="row custom-border m-3 p-3">
         <div class="col-md-12">
-            <h2>Nouvelle categorie</h2>
-        </div>
-    
-        <div class="col-md-12">
-            <div class="row mb-1 pr-3">
+            <form>
+              <div class="row mb-3">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Code categorie">
+                  <input type="text" class="form-control" placeholder="Code category">
                 </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="row mb-1 pr-3">
+              </div>
+              <div class="row mb-3">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Description">
+                  <input type="text" class="form-control" placeholder="Description">
                 </div>
-            </div>
-        </div>
-        <div class="col-md-12" style="text-align: right;">
-            <button class="btn btn-danger" style="margin-right: 3px;">
-                <i class="fas fa-ban"></i>&nbsp;Supprimer</button>
-            <button class="btn btn-primary">
-                <i class="fas fa-save"></i>&nbsp;Enregister</button>
-        </div>
-
-    
-</div>
+              </div>
+            </form>
+          </div>
+      </div>
+      
+    </div>
+    <div class="row" style="text-align: right;">
+        <div class="col-md-12 text-right">
+            <button class="btn btn-danger" style="margin-right: 3px;" (click)="cancel()">
+              <i class="fas fa-ban"></i>&nbsp;
+              Annuler
+            </button>
+            <button class="btn btn-primary" style="margin-right: 3px;">
+              <i class="fas fa-save"></i>&nbsp;
+              Enregitrer
+            </button>
+          </div>
+    </div>
+   
+  
+  </div>
+  
